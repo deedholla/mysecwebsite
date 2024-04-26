@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary rounded sticky-top" aria-label="Eleventh navbar example">
+    <div class="container-fluid">
+      <a id="boot2.html" class="navbar-brand" href="#"><img
+          src="data:image/jpeg;base64,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"
+          alt=""></a>
+          <style>
+            img{
+              width: 20%;
+              border-radius: 50px;
+            }
+          </style>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
+        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample09">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- home section -->
+  <div id="boot2.html" class="px-4 py-5 text-center home">
+    <h1 class="display-5 fw-bold text-body-light">Welcom to Tgmark</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+        popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
+        prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Learn More</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Subscribe Now</button>
+      </div>
+    </div>
+    <style>
+      .home {
+        background-color: black;
+        height: 70vh;
+        color: white;
+      }
+    </style>
+  </div>
+  <!-- about section -->
+  <section id="" class="about-section about">
+    <div class="container py-4">
+
+      <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-5">About Us</h1>
+          <p class="col-md-8 fs-4">This is coding school where varius type of programming lanhuage are being thougth
+            rangnging from the python programming language as top most learned higher level language in 2024, to the C
+            programming language which is the mostlearned and use low level languagein 2024</p>
+          <button class="btn btn-secondary btn-lg" type="button">Subscribe Now</button>
+        </div>
+      </div>
+
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6 mb-5">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>Learn python programming today</h2>
+            <p>with python programming, you can learn how to build with reasing mobile application, web application,
+              data analysis, machine learning & Ai etc</p>
+            <button class="btn btn-outline-light" type="button">Subscribe Now</button>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Learn java script programming, you can build softwore, web application with reason</h2>
+            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure
+              to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+              content for equal-height.</p>
+            <button class="btn btn-outline-secondary" type="button">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6 mb-5">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>Learn python programming today</h2>
+            <p>with python programming, you can learn how to build with reasing mobile application, web application,
+              data analysis, machine learning & Ai etc</p>
+            <button class="btn btn-outline-light" type="button">Subscribe Now</button>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Learn java script programming, you can build softwore, web application with reason</h2>
+            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure
+              to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+              content for equal-height.</p>
+            <button class="btn btn-outline-secondary" type="button">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6 mb-5">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>Learn python programming today</h2>
+            <p>with python programming, you can learn how to build with reasing mobile application, web application,
+              data analysis, machine learning & Ai etc</p>
+            <button class="btn btn-outline-light" type="button">Subscribe Now</button>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Learn java script programming, you can build softwore, web application with reason</h2>
+            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure
+              to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+              content for equal-height.</p>
+            <button class="btn btn-outline-secondary" type="button">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+      <style>
+        .about {
+          background-color: gray;
+        }
+      </style>
+    </div>
+  </section>
+  <!-- contact section -->
+  <section id="contact.html" class="contact-section container">
+    <div>
+      <h1 class="display-5 fw-bold">Contact Us</h1>
+    </div>
+    <div class="row align-items-md-stretch">
+      <form class="w-50 col-md-6">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+        <div class="form-floating mb-2">
+          <input type="email" class="form-control" id="fullname" placeholder="Full Name">
+          <label for="floatingInput">Full Name</label>
+        </div>
+        <div class="form-floating mb-2">
+          <input type="email" class="form-control" id="floatingInput" placeholder="Email Address">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-2">
+          <textarea class="form-control" id="Message" cols="30" rows="10"></textarea>
+
+          <label for="message">message</label>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-se w-50 py-2" type="submit">Send Message</button>
+        </div>
+      </form>
+      <div class="col-md-6 mb-5">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>Learn java script programming, you can build softwore, web application with reason</h2>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to
+            look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+            content for equal-height.</p>
+          <button class="btn btn-outline-light" type="button">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- fotter Section -->
+    <div class="container-f footer-section">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+      </footer>
+      <style>
+        .footer-section {
+          background-color: gray;
+        }
+      </style>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
